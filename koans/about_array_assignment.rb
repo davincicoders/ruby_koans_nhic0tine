@@ -25,7 +25,7 @@ class AboutArrayAssignment < Neo::Koan
   end
 
   def test_parallel_assignments_with_too_few_variables
-    first_name, last_name = ["Cher"]
+    first_name, last_name = ["Cher", "Sonny"]
     assert_equal __, first_name
     assert_equal __, last_name
   end

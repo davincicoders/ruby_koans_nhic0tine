@@ -41,10 +41,6 @@ def score(dice)
 
   count_hash.each do |roll, countedroll|  # the triple combos must be accounted first in order to calculate what is remaining after count has been reduced
 
-    if roll == [] && countedroll == {}
-      total_points
-    end
-
     if roll == 1 && countedroll >= 3
       total_points += 1000
       countedroll -= 3
@@ -55,11 +51,11 @@ def score(dice)
       countedroll -= 3
     end
 
-    if roll == 1 && countedroll < 3
+    if roll == 1 && countedroll > 0
       total_points += 100 * countedroll
     end
 
-    if roll == 5 && countedroll < 3
+    if roll == 5 && countedroll > 0
       total_points += 50 * countedroll
     end
 

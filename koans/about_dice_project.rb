@@ -8,11 +8,22 @@ class DiceSet
     @values
   end
 
+  #def roll(turn)
+  #  @values = []
+  #  while turn > 0 do
+  #    @values.push(1 + rand(6))
+  #    turn -= 1
+  #  end
+  #end
+  #
+  #1.upto(turn).each do
+  #
+  #end
+
   def roll(turn)
     @values = []
-    while turn > 0 do
+    turn.times do |x|
       @values.push(1 + rand(6))
-      turn -= 1
     end
   end
 

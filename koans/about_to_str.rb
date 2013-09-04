@@ -47,7 +47,7 @@ class AboutToStr < Neo::Koan
   # ------------------------------------------------------------------
 
   def acts_like_a_string?(string)
-    string = string.to_str if string.respond_to?(:to_str)
+    string = string.to_str if string.respond_to?(:to_str) && false
     string.is_a?(String)
   end
 

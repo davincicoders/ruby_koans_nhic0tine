@@ -55,4 +55,17 @@ class AboutToStr < Neo::Koan
     assert_equal __, acts_like_a_string?(CanNotBeTreatedAsString.new)
     assert_equal __,  acts_like_a_string?(CanBeTreatedAsString.new)
   end
+  
+  def test_andy_completed_ruby_koans
+    3.times { puts "**********************************************" }
+    2.times { puts "********                              ********" }
+    1.times { puts "********   GOOD JOB ANDY!!!           ********" }
+    1.times { puts "********                              ********" }
+    1.times { puts "********   Don't forget to run rake   ********" }
+    1.times { puts "********     to see the whole suite   ********" }
+    1.times { puts "********       pass!!!                ********" }
+    2.times { puts "********                              ********" }
+    3.times { puts "**********************************************" }
+    assert false
+  end
 end

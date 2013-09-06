@@ -51,3 +51,4 @@ class CanBeTreatedAsString
     assert_equal false, acts_like_a_string?(CanNotBeTreatedAsString.new)
     assert_equal true,  acts_like_a_string?(CanBeTreatedAsString.new)
   end
+end
